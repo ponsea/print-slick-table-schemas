@@ -33,7 +33,14 @@ class PrintSlickTableSchemas extends AnyFlatSpec {
 
     println(s"# Create table `column_types` in $dbName --------------------------------------")
     columnTypesTable.query.schema.createStatements.foreach(println)
+
+    println(s"# Drop table `column_types` in $dbName --------------------------------------")
+    columnTypesTable.query.schema.dropStatements.foreach(println)
+
     println(s"# Create table `table_constraints` in $dbName --------------------------------------")
     tableConstraintsTable.query.schema.createStatements.foreach(println)
+
+    println(s"# Drop table `table_constraints` in $dbName --------------------------------------")
+    tableConstraintsTable.query.schema.dropStatements.foreach(println)
   }
 }
