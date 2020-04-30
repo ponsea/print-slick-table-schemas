@@ -36,16 +36,16 @@ CREATE TABLE `column_types`(
 The result of [TableConstraintsTable.scala](https://github.com/ponsea/print-slick-table-schemas/blob/master/src/main/scala/tables/TableConstraintsTable.scala)
 ```sql
 CREATE TABLE `table_constraints`(
-    `unique`           BIGINT      NOT NULL UNIQUE,
-    `option`           BIGINT,
-    `default`          BIGINT      DEFAULT 0 NOT NULL,
-    `varyingLength`    VARCHAR(16) NOT NULL,
-    `notVaryingLength` CHAR(16)    NOT NULL,
-    `primary_key_1`    BIGINT      NOT NULL,
-    `primary_key_2`    BIGINT      NOT NULL,
-    `foreign_key_1`    BIGINT      NOT NULL,
-    `foreign_key_2`    BIGINT      NOT NULL,
-    `foreign_key_3`    BIGINT      NOT NULL
+    `unique`             BIGINT      NOT NULL UNIQUE,
+    `option`             BIGINT,
+    `default`            BIGINT      DEFAULT 0 NOT NULL,
+    `varying_length`     VARCHAR(16) NOT NULL,
+    `not_varying_length` CHAR(16)    NOT NULL,
+    `primary_key_1`      BIGINT      NOT NULL,
+    `primary_key_2`      BIGINT      NOT NULL,
+    `foreign_key_1`      BIGINT      NOT NULL,
+    `foreign_key_2`      BIGINT      NOT NULL,
+    `foreign_key_3`      BIGINT      NOT NULL
 )
 
 ALTER TABLE `table_constraints`

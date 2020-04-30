@@ -9,8 +9,8 @@ class TableConstraintsTable(val profile: JdbcProfile, val columnTypesTable: Colu
     def unique           = column[Long]("unique", O.Unique)
     def option           = column[Option[Long]]("option")
     def default          = column[Long]("default", O.Default(0L))
-    def varyingLength    = column[String]("varyingLength", O.Length(16, varying = true))
-    def notVaryingLength = column[String]("notVaryingLength", O.Length(16, varying = false))
+    def varyingLength    = column[String]("varying_length", O.Length(16, varying = true))
+    def notVaryingLength = column[String]("not_varying_length", O.Length(16, varying = false))
 
     // composite primary key
     def primaryKey1 = column[Long]("primary_key_1")
